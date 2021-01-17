@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.container__item {
+    height: 150px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    transition: all .4s;
+}
+
+.container__item:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container__item--1 {
+    background-color: #4285F4;
+}
+
+.container__item--2 {
+    background-color: #FBBC05;
+}
+
+.container__item--3 {
+    background-color: #34A853;
+}
+
+.container__item--4 {
+    background-color: #EA4335;
+}
+
+.container__item--5 {
+    background-color: #F65314;
+}
+
+.container__item--6 {
+    background-color: #00FF00;
+}
+
+.container__item--7 {
+    background-color: #00A1F1;
+}
+
+.container__item--8 {
+    background-color: #FFBB00;
+}
+
+.container__item--9 {
+    background-color: #7B0099;
+}
+
+.container__item--10 {
+    background-color: #E50914;
+}
+
+.container__item--11 {
+    background-color: #A4C639;
+}
+
+.container__item--12 {
+    background-color: #0F7DC2;
+}
+
+.effect2 {
+    position: relative;
+}
+
+.effect2:before,
+.effect2:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.effect2:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
